@@ -25,8 +25,10 @@ function Main() {
             <TypeAnimation
               sequence={[
                 "Coder", // Types 'One'
-                2000, // Waits 1s
+                1000, // Waits 1s
                 "Developer", // Deletes 'One' and types 'Two'
+                2000, // Waits 2s
+                "Software Engineer", // Deletes 'One' and types 'Two'
                 2000, // Waits 2s
                 "System Engineer", // Deletes 'One' and types 'Two'
                 2000, // Waits 2s

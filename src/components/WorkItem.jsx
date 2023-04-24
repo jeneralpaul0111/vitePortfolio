@@ -1,6 +1,18 @@
 import React from "react";
 
-const WorkItem = ({ year, title, duration, details }) => {
+const WorkItem = ({
+  year,
+  title,
+  duration,
+  detail1,
+  detail2,
+  detail3,
+  detail4,
+  detail5,
+  detail6,
+  detail7,
+  detail8,
+}) => {
   return (
     <ol className="flex flex-col md:flex-row relative border-l border-stone-200">
       <li className="mb-10 ml-4">
@@ -14,7 +26,16 @@ const WorkItem = ({ year, title, duration, details }) => {
             {duration}
           </span>
         </p>
-        <p className="my-2 text-base font-normal text-stone-500">{details}</p>
+        <p className="my-2 text-base font-medium italic text-stone-500">
+          {detail1}
+        </p>
+        <p className="my-2 text-base font-normal text-stone-500">{detail2}</p>
+        <p className="my-2 text-base font-normal text-stone-500">{detail3}</p>
+        <p className="my-2 text-base font-normal text-stone-500">{detail4}</p>
+        <p className="my-2 text-base font-normal text-stone-500">{detail5}</p>
+        <p className="my-2 text-base font-normal text-stone-500">{detail6}</p>
+        <p className="my-2 text-base font-normal text-stone-500">{detail7}</p>
+        <p className="my-2 text-base font-normal text-stone-500">{detail8}</p>
       </li>
     </ol>
   );

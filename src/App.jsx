@@ -8,7 +8,11 @@ import Contact from "./components/Contact";
 
 function App() {
   return (
-    <div>
+    <div
+      style={{
+        backgroundColor: "ghostwhite",
+      }}
+    >
       <Sidenav />
       <Main />
       <Work />
