@@ -30,7 +30,7 @@ function Main() {
                 2000, // Waits 2s
                 "Software Engineer", // Deletes 'One' and types 'Two'
                 2000, // Waits 2s
-                "System Engineer", // Deletes 'One' and types 'Two'
+                "System Engineers", // Deletes 'One' and types 'Two'
                 2000, // Waits 2s
               ]}
               wrapper="div"
@@ -44,7 +44,11 @@ function Main() {
             />
           </h2>
           <div className="flex justify-between pt-6 max-w-[200px] w-full">
-            <FaTwitter className="cursor-pointer" size={20} />
+            <FaTwitter
+              className="cursor-pointer"
+              size={20}
+              href="https://twitter.com/jeneralpaul0111"
+            />
             <FaFacebookF className="cursor-pointer" size={20} />
             <FaInstagram className="cursor-pointer" size={20} />
             <FaLinkedinIn className="cursor-pointer" size={20} />
