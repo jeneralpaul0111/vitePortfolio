@@ -6,7 +6,11 @@ const Contact = () => {
       <h1 className="py-4 text-4xl font-bold text-center text-[#001b5e]">
         Contact
       </h1>
-      <form action="" method="POST" encType="multipart/form-data">
+      <form
+        action="https://getform.io/f/d3a09203-0c41-4a20-a5bb-8cb98c43323c"
+        method="POST"
+        encType="multipart/form-data"
+      >
         <div className="grid md:grid-cols-2 gap-4 w-full py-2">
           <div className="flex flex-col">
             <label className="uppercase text-sm py-2">Name</label>
@@ -17,7 +21,7 @@ const Contact = () => {
             />
           </div>
           <div className="flex flex-col">
-            <label className="uppercase text-sm py-2">Phone Number</label>
+            <label className="uppercase text-sm py-2">Phone</label>
             <input
               className="border-2 rounded-lg p-3 flex border-gray-300"
               type="text"
