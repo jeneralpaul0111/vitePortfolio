@@ -14,11 +14,11 @@ function Projects() {
         Projects
       </h1>
       <p className="text-center py-8">
-        These projects are enterprise level software application or a web-based
-        solution that helps the office and production team to automate their
-        daily tasks, streamline processes, and increase productivity.
+        These projects are enterprise level window or web-based application that
+        helps the office and production team to automate their daily tasks,
+        streamline processes, and increase productivity.
       </p>
-      <div className="grid sm:grid-cols-2 gap-12">
+      <div className="grid sm:grid-cols-3 gap-12">
         <ProjectsItem
           img={payrollIMG}
           title="Payroll"

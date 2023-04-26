@@ -6,6 +6,9 @@ const Contact = () => {
       <h1 className="py-4 text-4xl font-bold text-center text-[#001b5e]">
         Contact
       </h1>
+      <p className="pb-4 italic text-center text-[#001b5e]">
+        How can I help you?
+      </p>
       <form
         action="https://getform.io/f/d3a09203-0c41-4a20-a5bb-8cb98c43323c"
         method="POST"

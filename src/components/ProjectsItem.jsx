@@ -10,7 +10,7 @@ function ProjectsItem({ img, title, desc, role }) {
         </h3>
         <p className="pb-2 pt-2 text-white text-center">{desc}</p>
         <p className="pb-4 pt-0 text-white italic text-center">{role}</p>
-        <a href="/">
+        <a href="#contact">
           <p className="text-center p-3 rounded-lg bg-white text-gray-700 font-bold cursor-pointer text-lg">
             More info
           </p>

@@ -1,5 +1,6 @@
 import React from "react";
 import WorkItem from "./WorkItem";
+import logo from "../images/IMG_6314.jpg";
 
 const data = [
   {
@@ -51,14 +52,16 @@ const data = [
     title: "Software Engineer",
     duration: "10 years and above",
     detail1:
-      "Software development (SQL, ORACLE, MongoDB, JSON, C++, ASSEMBLY, JAVA, VB6, VBA, VB.NET, FoXPRO, C#, JAVASCRIPT, HTML, CSS, Bootstrap, ReactJS)",
+      "Software development (SQL, ORACLE, MongoDB, JSON, C++, ASSEMBLY, JAVA, VB6, VBA, VB.NET, ASP.NET, FoXPRO, C#, JAVASCRIPT, HTML, CSS, Bootstrap, ReactJS)",
   },
 ];
 
 const Work = () => {
   return (
     <div id="work" className="max-w-[1040px] m-auto md:pl-20 p-4 py-16">
-      <h1 className="text-4xl font-bold text-center text-[#001b5e]">Work</h1>
+      <h1 className="text-4xl font-bold text-center py-8 text-[#001b5e]">
+        Work
+      </h1>
       {data.map((item, idx) => (
         <WorkItem
           key={idx}
