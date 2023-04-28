@@ -5,17 +5,17 @@ import { MdChevronLeft, MdChevronRight } from "react-icons/md";
 function Skills() {
   const slideLeft = () => {
     var slider = document.getElementById("slider");
-    slider.scrollLeft = slider.scrollerleft - 500;
+    slider.scrollLeft = slider.scrollLeft - 500;
   };
 
   const slideRight = () => {
     var slider = document.getElementById("slider");
-    slider.scrollLeft = slider.scrollerleft + 500;
+    slider.scrollLeft = slider.scrollLeft + 500;
   };
 
   return (
-    <div>
-      <div className="max-w-[1040px] m-auto md:pl-20 p-4 py-16">
+    <div className="bg-amber-50">
+      <div id="skills" className="max-w-[1040px] m-auto md:pl-20 p-4 py-16">
         {/* relative flex items-center*/}
         <h1 className="text-4xl font-bold text-center pb-8 text-[#001b5e]">
           Skills
@@ -28,7 +28,8 @@ function Skills() {
           >
             {data.map((item) => (
               <img
-                className="w-[220px] inline-block p-2 cursor-pointer hover:scale-105 ease-in-out duration-300"
+                key={item.id}
+                className="w-[300px] inline-block p-2 cursor-pointer hover:scale-105 ease-in-out duration-300"
                 src={item.img}
                 alt="/"
               />
