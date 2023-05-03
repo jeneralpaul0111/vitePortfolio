@@ -11,7 +11,8 @@ const Contact = () => {
           How can I help you?
         </p>
         <form
-          action="https://getform.io/f/d3a09203-0c41-4a20-a5bb-8cb98c43323c"
+          // action="https://getform.io/f/d3a09203-0c41-4a20-a5bb-8cb98c43323c"
+          action="http://localhost:5000/api/v1/contacts/new"
           method="POST"
           encType="multipart/form-data"
         >
