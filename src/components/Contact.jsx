@@ -1,5 +1,7 @@
 import React from "react";
 
+//const APILINK = "http://localhost:5000/api/v1/contacts/";
+
 const Contact = () => {
   return (
     <div className="bg-emerald-50">
@@ -11,8 +13,8 @@ const Contact = () => {
           How can I help you?
         </p>
         <form
-          // action="https://getform.io/f/d3a09203-0c41-4a20-a5bb-8cb98c43323c"
-          action="http://localhost:5000/api/v1/contacts/new"
+          action="https://getform.io/f/d3a09203-0c41-4a20-a5bb-8cb98c43323c"
+          //action="http://localhost:5000/api/v1/contacts/new"
           method="POST"
           encType="multipart/form-data"
         >
@@ -23,6 +25,7 @@ const Contact = () => {
                 className="border-2 rounded-lg p-3 flex border-gray-300"
                 type="text"
                 name="name"
+                id="name"
               />
             </div>
             <div className="flex flex-col">
@@ -31,6 +34,7 @@ const Contact = () => {
                 className="border-2 rounded-lg p-3 flex border-gray-300"
                 type="text"
                 name="phone"
+                id="phone"
               />
             </div>
           </div>
@@ -41,6 +45,7 @@ const Contact = () => {
                 className="border-2 rounded-lg p-3 flex border-gray-300"
                 type="email"
                 name="email"
+                id="email"
               />
             </div>
             <div className="flex flex-col py-2">
@@ -49,6 +54,7 @@ const Contact = () => {
                 className="border-2 rounded-lg p-3 flex border-gray-300"
                 type="text"
                 name="subject"
+                id="subject"
               />
             </div>
             <div className="flex flex-col py-2">
@@ -57,6 +63,7 @@ const Contact = () => {
                 className="border-2 rounded-lg p-3 border-gray-300"
                 rows="10"
                 name="message"
+                id="message"
               ></textarea>
             </div>
           </div>

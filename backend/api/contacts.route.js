@@ -4,7 +4,7 @@ import ContactsCtrl from "./contacts.controller.js"
 const router = express.Router()
 
 // router.route("/").get((req, res) => res.send("Hello World"))
-router.route("/contact/:id").get(ContactsCtrl.apiGetContacts)
+router.route("/contact/:id").get(ContactsCtrl.apiGetContact)
 router.route("/new").post(ContactsCtrl.apiPostContacts)
 router.route("/:id")
   .get(ContactsCtrl.apiGetContacts)

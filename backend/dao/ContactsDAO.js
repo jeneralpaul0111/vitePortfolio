@@ -34,7 +34,7 @@ export default class ContactsDAO {
 
   static async getContact(contactID) {
     try {
-      return await contacts.findOne({_id: ObjectId(contactID)})
+      return await contacts.findOne({_id: new ObjectId(contactID)})
     } catch (e) {
       console.error(`Unable to get contact: ${e}`)
       return {e}

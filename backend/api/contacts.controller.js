@@ -3,7 +3,7 @@ import ContactsDAO from "../dao/ContactsDAO.js"
 export default class ContactsController {
   static async apiPostContacts(req, res, next) {
     try {
-      const contactID = req.body.contactID
+      const contactID = parseInt(req.body.contactID)
       const contactName = req.body.contactName
       const phone = req.body.phone
       const email = req.body.email
@@ -24,10 +24,11 @@ export default class ContactsController {
     }
   }
 
-  static async apiGetContacts(req, res, next) {
+  static async apiGetContact(req, res, next) {
     try {
       let id = req.params.id || {}
       let contact = await ContactsDAO.getContact(id)
+      console.log(id)
       if (!contact) {
         res.status(404).json({ error: "Not found"})
         return
@@ -91,7 +92,7 @@ export default class ContactsController {
         res.status(404).json({ error: "Not found"})
         return
       }
-      res.json(reviews)
+      res.json(contacts)
     } catch (e) {
       console.log(`api, ${e}`)
       res.status(500).json({error: e})
